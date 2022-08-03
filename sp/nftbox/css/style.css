@@ -1,0 +1,236 @@
+.bg_bluish{
+	background-color: #d4e2f6!important;
+}
+
+.text_nft{
+	color: #7c224b;
+}
+
+.btn_nft{
+	color: #ffffff;
+    border: 1px solid #7c224b;
+    background: #7c224b;
+}
+
+.btn_nft:focus,
+.btn_nft:hover {
+    color: #ffffff;
+    border: 1px solid #9c2159;
+    background: #9c2159;
+}
+
+.for_hover::before {
+	content: '';
+	background: rgb(0 94 175 / 90%);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 66px;
+	transition-duration: 0.4s;
+}
+
+.for_hover:hover::before {
+	height: 100%;
+}
+
+.hover_content {
+	top: calc(100% + 25px);
+	align-content: center;
+	height: auto;
+	transition-duration: 0.4s;
+	transform: translateY(0);
+}
+
+.for_hover:hover .hover_content {
+	transform: translateY(-50%);
+	top: 50%;
+}
+
+.vdo_wrap .vdo-link {
+	background: #00c156;
+	width: 70px
+}
+
+.vdo_wrap .vdo-link i {
+	line-height: 70px;
+	font-size: 28px;
+}
+
+/* Testimonial CSS
+==================================*/
+
+.client_comment {
+    line-height: 40px;
+}
+
+.testimonial_part .new-test .owl-nav {
+    display: none;
+}
+
+.new-test .owl-dots {
+    text-align: center;
+    margin-top: 30px;
+	padding-bottom: 20px;
+}
+
+.new-test .owl-dots .owl-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #9dd099;
+    margin: 0 3px;
+    border-radius: 50%;
+}
+
+.new-test .owl-dots .owl-dot.active {
+    background-color: #01833b;
+}
+
+.testimonial_part .quotation-icon {
+    opacity: 0.2;
+}
+
+/* FAQ CSS 
+========================*/
+
+.accordion .accordion-button:not(.collapsed) {
+    color: #099557;
+    font-weight: 600;
+    background-color: #daf5e9;
+}
+
+.accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+.banner_wrapper {
+    background: url(../images/banner_bg.png);
+    background-size: cover;
+}
+
+.banner-carousel .owl-nav .owl-prev {
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	background: rgb(36 127 205 / 75%) !important;
+	color: #fff !important;
+	width: 50px;
+	cursor: pointer;
+	height: 50px;
+	position: absolute;
+	display: block;
+	z-index: 1000;
+	border-radius: 0 10px 10px 0;
+}
+
+.banner-carousel .owl-nav .owl-prev span {
+	font-size: 1.6875rem;
+	color: #fff;
+}
+
+.banner-carousel .owl-nav .owl-prev:focus {
+	outline: 0;
+}
+
+.banner-carousel .owl-nav .owl-prev:hover {
+	background: #000 !important;
+}
+
+.banner-carousel .owl-nav .owl-next {
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	transform: translateY(-50%);
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+	background: rgb(36 127 205 / 75%) !important;
+	color: #fff !important;
+	width: 50px;
+	cursor: pointer;
+	height: 50px;
+	position: absolute;
+	display: block;
+	z-index: 1000;
+	border-radius: 10px 0 0 10px;
+}
+
+.banner-carousel .owl-nav .owl-next span {
+	font-size: 1.6875rem;
+	color: #fff;
+}
+
+.banner-carousel .owl-nav .owl-next:focus {
+	outline: 0;
+}
+
+.banner-carousel .owl-nav .owl-prev:hover,
+.banner-carousel .owl-nav .owl-next:hover {
+	background: #247fcd !important;
+}
+
+.banner-carousel:hover .owl-prev {
+	left: 0px;
+	opacity: 1;
+}
+
+.banner-carousel:hover .owl-next {
+	right: 0px;
+	opacity: 1;
+}
+
+.process_part .addon {
+    background: #7c224b;
+    width: 200px;
+    top: 16px;
+    left: -70px;
+    line-height: 22px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.inner_shadow{
+	-webkit-box-shadow: 0 2px 50px rgb(0 0 0 / 8%);
+    box-shadow: 0 2px 50px rgb(0 0 0 / 8%);
+}
+
+@-webkit-keyframes slideOutUp {
+	0% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0)
+	}
+
+	to {
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+		visibility: hidden
+	}
+}
+
+@keyframes slideOutUp {
+	0% {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0)
+	}
+
+	to {
+		-webkit-transform: translate3d(0, -100%, 0);
+		transform: translate3d(0, -100%, 0);
+		visibility: hidden
+	}
+}
+
+.slideOutUp {
+	-webkit-animation-name: slideOutUp;
+	animation-name: slideOutUp
+}
+
+@media(max-width: 767px) {
+	.features_accordion {
+		padding-left: 20px;
+	}
+}
